@@ -7,13 +7,13 @@ This repository contains a beginner-friendly Python script that generates random
 -Customizable password length.
 
 # How to Use:
--Clone the repository or download the .py file.
--Run the script in a Python environment (I used Python 3.9).
--The script will output a random password.
+- Clone the repository or download the .py file.
+- Run the script in a Python environment (I used Python 3.9).
+- The script will output a random password.
 
 # Learning Outcomes:
--Understand the use of loops and the random module in Python.
--Learn how to manipulate strings and build functions.
+- Understand the use of loops and the random module in Python.
+- Learn how to manipulate strings and build functions.
 
 ## Note:
 This script is for educational purposes and the generated passwords should not be used for sensitive accounts as it does not include special characters or other advanced security features.
