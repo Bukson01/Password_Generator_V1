@@ -1,19 +1,17 @@
-# Import the necessary modules
 import random
+import string
 
-def generate_password(length):
-    # Define a simple set of characters for the password
-    characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
-    
-    # Randomly choose characters from the set and build the password
-    password = ''
-    for i in range(length):
-        password += random.choice(characters)
-    
+def generate_password(length=12):
+    """Generate a random password."""
+    # Define characters to choose from
+    characters = string.ascii_letters + string.digits + string.punctuation
+
+    # Generate password
+    password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
-# Set the desired password length
-password_length = 12
-
-# Call the function and print the generated password
-print("\n Your new password is:", generate_password(password_length),"\n")
+# Example usage:
+if __name__ == "__main__":
+    password_length = int(input("Enter the length of the password: "))
+    generated_password = generate_password(password_length)
+    print("\nGenerated Password:", generated_password,"\n")
